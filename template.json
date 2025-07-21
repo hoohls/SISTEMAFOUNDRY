@@ -1,0 +1,119 @@
+{
+  "Actor": {
+    "types": ["character", "npc"],
+    "templates": {
+      "base": {
+        "atributos": {
+          "fisico": {
+            "value": 3,
+            "min": 1,
+            "max": 10
+          },
+          "acao": {
+            "value": 3,
+            "min": 1,
+            "max": 10
+          },
+          "mental": {
+            "value": 3,
+            "min": 1,
+            "max": 10
+          },
+          "social": {
+            "value": 3,
+            "min": 1,
+            "max": 10
+          }
+        },
+        "pv": {
+          "value": 19,
+          "max": 19
+        },
+        "pm": {
+          "value": 11,
+          "max": 11
+        },
+        "defesa": {
+          "value": 13,
+          "armadura": 0
+        },
+        "nivel": {
+          "value": 1,
+          "xp": 0,
+          "xpProximo": 100
+        },
+        "iniciativa": {
+          "value": 0
+        }
+      }
+    },
+    "character": {
+      "templates": ["base"],
+      "raca": "humano",
+      "classe": "guerreiro",
+      "equipamentos": {
+        "dinheiro": 100
+      },
+      "detalhes": {
+        "idade": "",
+        "aparencia": "",
+        "personalidade": "",
+        "historia": "",
+        "motivacoes": ""
+      }
+    },
+    "npc": {
+      "templates": ["base"],
+      "tipo": "comum",
+      "descricao": ""
+    }
+  },
+  "Item": {
+    "types": ["arma", "armadura", "escudo", "equipamento", "habilidade", "magia"],
+    "templates": {
+      "base": {
+        "descricao": "",
+        "preco": 0,
+        "peso": 0
+      }
+    },
+    "arma": {
+      "templates": ["base"],
+      "tipo": "corpo-a-corpo",
+      "dano": "2d6",
+      "alcance": "corpo-a-corpo",
+      "propriedades": []
+    },
+    "armadura": {
+      "templates": ["base"],
+      "defesa": 0,
+      "penalidade": 0,
+      "tipo": "leve"
+    },
+    "escudo": {
+      "templates": ["base"],
+      "defesa": 1,
+      "tipo": "pequeno"
+    },
+    "equipamento": {
+      "templates": ["base"],
+      "tipo": "geral",
+      "quantidade": 1
+    },
+    "habilidade": {
+      "templates": ["base"],
+      "categoria": "classe",
+      "nivel": 1,
+      "ativa": true
+    },
+    "magia": {
+      "templates": ["base"],
+      "escola": "elemental",
+      "nivel": 1,
+      "custo": 1,
+      "alcance": "toque",
+      "duracao": "instantaneo",
+      "componentes": []
+    }
+  }
+}

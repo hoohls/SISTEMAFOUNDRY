@@ -1,0 +1,28 @@
+<div class="clube-chat-card">
+  <h3>{{item.name}}</h3>
+  
+  <div class="spell-info">
+    <div class="spell-details">
+      <span class="spell-detail"><strong>Escola:</strong> {{capitalize item.system.escola}}</span>
+      <span class="spell-detail"><strong>Custo:</strong> {{item.system.custo}} PM</span>
+      <span class="spell-detail"><strong>Alcance:</strong> {{item.system.alcance}}</span>
+      <span class="spell-detail"><strong>Duração:</strong> {{item.system.duracao}}</span>
+    </div>
+    
+    {{#if spellRoll}}
+    <div class="roll-section">
+      <h4>Efeito</h4>
+      <div class="roll-result">
+        {{spellRoll.total}}
+      </div>
+      <div class="roll-formula">{{spellRoll.formula}}</div>
+    </div>
+    {{/if}}
+  </div>
+  
+  {{#if item.system.descricao}}
+  <div class="item-description">
+    <p>{{item.system.descricao}}</p>
+  </div>
+  {{/if}}
+</div>

@@ -1,0 +1,27 @@
+<div class="clube-chat-card">
+  <h3>{{item.name}}</h3>
+  
+  <div class="attack-info">
+    <div class="roll-section">
+      <h4>Ataque</h4>
+      <div class="roll-result">
+        {{attackRoll.total}}
+      </div>
+      <div class="roll-formula">{{attackRoll.formula}}</div>
+    </div>
+    
+    <div class="roll-section">
+      <h4>Dano</h4>
+      <div class="roll-result">
+        {{damageRoll.total}}
+      </div>
+      <div class="roll-formula">{{damageRoll.formula}}</div>
+    </div>
+  </div>
+  
+  {{#if item.system.descricao}}
+  <div class="item-description">
+    <p>{{item.system.descricao}}</p>
+  </div>
+  {{/if}}
+</div>

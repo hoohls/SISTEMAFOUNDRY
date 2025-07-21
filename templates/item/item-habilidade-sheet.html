@@ -1,0 +1,41 @@
+<form class="{{cssClass}} {{item.type}} flexcol" autocomplete="off">
+
+  {{!-- Sheet Header --}}
+  <header class="sheet-header">
+    <img class="item-img" src="{{item.img}}" data-edit="img" title="{{item.name}}" height="64" width="64"/>
+    <div class="header-fields">
+      <h1 class="item-name"><input name="name" type="text" value="{{item.name}}" placeholder="Nome da Habilidade"/></h1>
+    </div>
+  </header>
+
+  {{!-- Sheet Body --}}
+  <section class="sheet-body">
+    <div class="form-group">
+      <label>Descrição</label>
+      <div class="form-fields">
+        {{editor system.descricao target="system.descricao" button=true owner=owner editable=editable}}
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>Categoria</label>
+      <select name="system.categoria">
+        {{#each categoriasHabilidade as |categoria key|}}
+        <option value="{{key}}" {{#if (eq ../system.categoria key)}}selected{{/if}}>{{categoria}}</option>
+        {{/each}}
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label>Nível Mínimo</label>
+      <input type="number" name="system.nivel" value="{{system.nivel}}" min="1" max="20"/>
+    </div>
+
+    <div class="form-group">
+      <label class="checkbox">
+        <input type="checkbox" name="system.ativa" {{checked system.ativa}}/>
+        Habilidade Ativa (requer ação para usar)
+      </label>
+    </div>
+  </section>
+</form>

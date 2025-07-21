@@ -1,0 +1,34 @@
+{
+  "id": "clube-dos-taberneiros",
+  "title": "Sistema Clube dos Taberneiros",
+  "description": "Sistema de RPG brasileiro usando 2d6 para todas as resoluções",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "11",
+    "verified": "12"
+  },
+  "authors": [
+    {
+      "name": "Desenvolvedor",
+      "discord": "usuario#0000"
+    }
+  ],
+  "esmodules": ["module/clube-dos-taberneiros.mjs"],
+  "styles": ["css/clube-dos-taberneiros.css"],
+  "languages": [
+    {
+      "lang": "pt-BR",
+      "name": "Português (Brasil)",
+      "path": "lang/pt-BR.json"
+    }
+  ],
+  "gridDistance": 1.5,
+  "gridUnits": "m",
+  "primaryTokenAttribute": "pv",
+  "secondaryTokenAttribute": "pm",
+  "url": "",
+  "manifest": "",
+  "download": "",
+  "license": "LICENSE.txt",
+  "readme": "README.md"
+}

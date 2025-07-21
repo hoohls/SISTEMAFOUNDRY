@@ -1,0 +1,97 @@
+<form class="{{cssClass}} {{item.type}} flexcol" autocomplete="off">
+
+  {{!-- Sheet Header --}}
+  <header class="sheet-header">
+    <img class="item-img" src="{{item.img}}" data-edit="img" title="{{item.name}}" height="64" width="64"/>
+    <div class="header-fields">
+      <h1 class="item-name"><input name="name" type="text" value="{{item.name}}" placeholder="Nome da Magia"/></h1>
+    </div>
+  </header>
+
+  {{!-- Sheet Tab Navigation --}}
+  <nav class="sheet-tabs tabs" data-group="primary">
+    <a class="item" data-tab="description">Descrição</a>
+    <a class="item" data-tab="details">Detalhes</a>
+  </nav>
+
+  {{!-- Sheet Body --}}
+  <section class="sheet-body">
+
+    {{!-- Description Tab --}}
+    <div class="tab" data-group="primary" data-tab="description">
+      <div class="form-group">
+        <label>Descrição</label>
+        <div class="form-fields">
+          {{editor system.descricao target="system.descricao" button=true owner=owner editable=editable}}
+        </div>
+      </div>
+    </div>
+
+    {{!-- Details Tab --}}
+    <div class="tab" data-group="primary" data-tab="details">
+      <div class="form-group">
+        <label>Escola de Magia</label>
+        <select name="system.escola">
+          {{#each escolasMagia as |escola key|}}
+          <option value="{{key}}" {{#if (eq ../system.escola key)}}selected{{/if}}>{{escola}}</option>
+          {{/each}}
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Nível da Magia</label>
+        <input type="number" name="system.nivel" value="{{system.nivel}}" min="1" max="6"/>
+      </div>
+
+      <div class="form-group">
+        <label>Custo em PM</label>
+        <input type="number" name="system.custo" value="{{system.custo}}" min="1"/>
+      </div>
+
+      <div class="form-group">
+        <label>Alcance</label>
+        <select name="system.alcance">
+          {{#each alcancesMagia as |alcance key|}}
+          <option value="{{key}}" {{#if (eq ../system.alcance key)}}selected{{/if}}>{{alcance}}</option>
+          {{/each}}
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Duração</label>
+        <select name="system.duracao">
+          {{#each duracoesMagia as |duracao key|}}
+          <option value="{{key}}" {{#if (eq ../system.duracao key)}}selected{{/if}}>{{duracao}}</option>
+          {{/each}}
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Dano (se aplicável)</label>
+        <input type="text" name="system.dano" value="{{system.dano}}" placeholder="2d6"/>
+      </div>
+
+      <div class="form-group">
+        <label>Componentes</label>
+        <div class="components-grid">
+          <label class="checkbox">
+            <input type="checkbox" class="component-toggle" data-component="verbal" 
+                   {{#if (includes system.componentes "verbal")}}checked{{/if}}/>
+            Verbal
+          </label>
+          <label class="checkbox">
+            <input type="checkbox" class="component-toggle" data-component="somatico" 
+                   {{#if (includes system.componentes "somatico")}}checked{{/if}}/>
+            Somático
+          </label>
+          <label class="checkbox">
+            <input type="checkbox" class="component-toggle" data-component="material" 
+                   {{#if (includes system.componentes "material")}}checked{{/if}}/>
+            Material
+          </label>
+        </div>
+      </div>
+    </div>
+
+  </section>
+</form>

@@ -1,0 +1,77 @@
+{
+  "CLUBE": {
+    "AtributoFisico": "Físico",
+    "AtributoAcao": "Ação", 
+    "AtributoMental": "Mental",
+    "AtributoSocial": "Social",
+    
+    "Racas": {
+      "humano": "Humano",
+      "elfo": "Elfo",
+      "anao": "Anão", 
+      "halfling": "Halfling",
+      "tiefling": "Tiefling",
+      "goblin": "Goblin"
+    },
+    
+    "Classes": {
+      "guerreiro": "Guerreiro",
+      "mago": "Mago",
+      "ladino": "Ladino",
+      "diplomata": "Diplomata"
+    },
+    
+    "TiposArma": {
+      "corpo-a-corpo": "Corpo a Corpo",
+      "distancia": "À Distância"
+    },
+    
+    "EscolasMagia": {
+      "elemental": "Elemental",
+      "mental": "Mental", 
+      "natureza": "Natureza",
+      "protecao": "Proteção",
+      "ilusao": "Ilusão",
+      "necromancia": "Necromancia"
+    },
+    
+    "Tabs": {
+      "atributos": "Atributos",
+      "habilidades": "Habilidades", 
+      "equipamentos": "Equipamentos",
+      "magias": "Magias",
+      "detalhes": "Detalhes"
+    },
+    
+    "Labels": {
+      "nome": "Nome",
+      "raca": "Raça",
+      "classe": "Classe", 
+      "nivel": "Nível",
+      "pontosVida": "Pontos de Vida",
+      "pontosMagia": "Pontos de Magia",
+      "defesa": "Defesa",
+      "iniciativa": "Iniciativa",
+      "dinheiro": "Moedas de Prata",
+      "idade": "Idade",
+      "aparencia": "Aparência",
+      "personalidade": "Personalidade", 
+      "historia": "História",
+      "motivacoes": "Motivações"
+    },
+    
+    "Buttons": {
+      "rolar": "Rolar",
+      "adicionar": "Adicionar",
+      "editar": "Editar", 
+      "deletar": "Deletar"
+    },
+    
+    "Messages": {
+      "pontosMagiaInsuficientes": "Pontos de Magia insuficientes!",
+      "personagemDerrotado": "foi derrotado!",
+      "danoRecebido": "recebeu {damage} pontos de dano",
+      "vidaRecuperada": "recuperou {healing} pontos de vida"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+<form class="{{cssClass}} {{item.type}} flexcol" autocomplete="off">
+
+  {{!-- Sheet Header --}}
+  <header class="sheet-header">
+    <img class="item-img" src="{{item.img}}" data-edit="img" title="{{item.name}}" height="64" width="64"/>
+    <div class="header-fields">
+      <h1 class="item-name"><input name="name" type="text" value="{{item.name}}" placeholder="Nome do Equipamento"/></h1>
+    </div>
+  </header>
+
+  {{!-- Sheet Body --}}
+  <section class="sheet-body">
+    <div class="form-group">
+      <label>Descrição</label>
+      <div class="form-fields">
+        {{editor system.descricao target="system.descricao" button=true owner=owner editable=editable}}
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>Tipo</label>
+      <input type="text" name="system.tipo" value="{{system.tipo}}" placeholder="Geral"/>
+    </div>
+
+    <div class="form-group">
+      <label>Quantidade</label>
+      <input type="number" name="system.quantidade" value="{{system.quantidade}}" min="1"/>
+    </div>
+
+    <div class="form-group">
+      <label>Preço (MP)</label>
+      <input type="number" name="system.preco" value="{{system.preco}}" min="0"/>
+    </div>
+
+    <div class="form-group">
+      <label>Peso</label>
+      <input type="number" name="system.peso" value="{{system.peso}}" min="0" step="0.1"/>
+    </div>
+  </section>
+</form>
