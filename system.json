@@ -28,7 +28,7 @@
   "secondaryTokenAttribute": "pm",
   "url": "https://github.com/hoohls/SISTEMAFOUNDRY",
   "manifest": "https://raw.githubusercontent.com/hoohls/SISTEMAFOUNDRY/refs/heads/main/system.json",
-  "download": "https://github.com/hoohls/SISTEMAFOUNDRY/archive/refs/heads/main.zip",
+  "download": "https://github.com/hoohls/SISTEMAFOUNDRY/archive/main.zip",
   "license": "LICENSE.txt",
   "readme": "README.md"
 }
