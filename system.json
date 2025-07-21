@@ -1,16 +1,16 @@
 {
   "id": "clube-dos-taberneiros",
   "title": "Sistema Clube dos Taberneiros",
-  "description": "Sistema de RPG brasileiro usando 2d6 para todas as resoluções",
+  "description": "Sistema de RPG baseado em 2d6 com quatro atributos fundamentais (Físico, Ação, Mental, Social). Um sistema elegante que combina simplicidade mecânica com profundidade tática.",
   "version": "1.0.0",
   "compatibility": {
-    "minimum": "11",
-    "verified": "12"
+    "minimum": "12",
+    "verified": "13"
   },
   "authors": [
     {
-      "name": "Desenvolvedor",
-      "discord": "usuario#0000"
+      "name": "Clube dos Taberneiros",
+      "discord": "clube-dos-taberneiros"
     }
   ],
   "esmodules": ["module/clube-dos-taberneiros.mjs"],
@@ -22,13 +22,19 @@
       "path": "lang/pt-BR.json"
     }
   ],
-  "gridDistance": 1.5,
-  "gridUnits": "m",
+  "grid": {
+    "distance": 1.5,
+    "units": "m"
+  },
   "primaryTokenAttribute": "pv",
   "secondaryTokenAttribute": "pm",
+  "socket": true,
+  "initiative": "2d6 + @atributos.acao.value",
   "url": "https://github.com/hoohls/SISTEMAFOUNDRY",
   "manifest": "https://raw.githubusercontent.com/hoohls/SISTEMAFOUNDRY/refs/heads/main/system.json",
-  "download": "https://codeload.github.com/hoohls/SISTEMAFOUNDRY/zip/refs/heads/main",
+  "download": "https://github.com/hoohls/SISTEMAFOUNDRY/archive/main.zip",
   "license": "LICENSE.txt",
-  "readme": "README.md"
+  "readme": "README.md",
+  "bugs": "https://github.com/hoohls/SISTEMAFOUNDRY/issues",
+  "changelog": "https://github.com/hoohls/SISTEMAFOUNDRY/releases"
 }
