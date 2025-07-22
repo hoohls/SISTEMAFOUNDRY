@@ -30,6 +30,161 @@
   "secondaryTokenAttribute": "pm",
   "socket": true,
   "initiative": "2d6 + @atributos.acao.value",
+  "packs": [
+    {
+      "name": "armas-corpo-a-corpo",
+      "label": "Armas Corpo a Corpo",
+      "path": "packs/armas-corpo-a-corpo.db",
+      "type": "Item",
+      "system": "clube-dos-taberneiros",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "armas-distancia",
+      "label": "Armas à Distância",
+      "path": "packs/armas-distancia.db",
+      "type": "Item",
+      "system": "clube-dos-taberneiros",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "armaduras",
+      "label": "Armaduras",
+      "path": "packs/armaduras.db",
+      "type": "Item",
+      "system": "clube-dos-taberneiros",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "escudos",
+      "label": "Escudos",
+      "path": "packs/escudos.db",
+      "type": "Item",
+      "system": "clube-dos-taberneiros",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "equipamentos-gerais",
+      "label": "Equipamentos Gerais",
+      "path": "packs/equipamentos-gerais.db",
+      "type": "Item",
+      "system": "clube-dos-taberneiros",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "magias-elemental",
+      "label": "Magias - Elemental",
+      "path": "packs/magias-elemental.db",
+      "type": "Item",
+      "system": "clube-dos-taberneiros",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "magias-mental",
+      "label": "Magias - Mental",
+      "path": "packs/magias-mental.db",
+      "type": "Item",
+      "system": "clube-dos-taberneiros",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "magias-natureza",
+      "label": "Magias - Natureza",
+      "path": "packs/magias-natureza.db",
+      "type": "Item",
+      "system": "clube-dos-taberneiros",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "magias-protecao",
+      "label": "Magias - Proteção",
+      "path": "packs/magias-protecao.db",
+      "type": "Item",
+      "system": "clube-dos-taberneiros",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "magias-ilusao",
+      "label": "Magias - Ilusão",
+      "path": "packs/magias-ilusao.db",
+      "type": "Item",
+      "system": "clube-dos-taberneiros",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "magias-necromancia",
+      "label": "Magias - Necromancia",
+      "path": "packs/magias-necromancia.db",
+      "type": "Item",
+      "system": "clube-dos-taberneiros",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "habilidades-guerreiro",
+      "label": "Habilidades - Guerreiro",
+      "path": "packs/habilidades-guerreiro.db",
+      "type": "Item",
+      "system": "clube-dos-taberneiros",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "habilidades-mago",
+      "label": "Habilidades - Mago",
+      "path": "packs/habilidades-mago.db",
+      "type": "Item",
+      "system": "clube-dos-taberneiros",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "habilidades-ladino",
+      "label": "Habilidades - Ladino",
+      "path": "packs/habilidades-ladino.db",
+      "type": "Item",
+      "system": "clube-dos-taberneiros",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "habilidades-diplomata",
+      "label": "Habilidades - Diplomata",
+      "path": "packs/habilidades-diplomata.db",
+      "type": "Item",
+      "system": "clube-dos-taberneiros",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "habilidades-raciais",
+      "label": "Habilidades Raciais",
+      "path": "packs/habilidades-raciais.db",
+      "type": "Item",
+      "system": "clube-dos-taberneiros",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "pocoes-consumiveis",
+      "label": "Poções e Consumíveis",
+      "path": "packs/pocoes-consumiveis.db",
+      "type": "Item",
+      "system": "clube-dos-taberneiros",
+      "private": false,
+      "flags": {}
+    }
+  ],
   "url": "https://github.com/hoohls/SISTEMAFOUNDRY",
   "manifest": "https://raw.githubusercontent.com/hoohls/SISTEMAFOUNDRY/refs/heads/main/system.json",
   "download": "https://github.com/hoohls/SISTEMAFOUNDRY/archive/main.zip",
